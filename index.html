@@ -9,9 +9,7 @@
 	{% if site.projects %}
 	<ul>
 		{% for project in site.projects %}
-		<li>
-			<a href="{{ project.url }}">{{ project.title }}</a>
-		</li>
+			{% include post-preview.html post=project %}
 		{% endfor %}
 	</ul>
 	{% endif %}

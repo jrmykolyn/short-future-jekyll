@@ -1,0 +1,18 @@
+<article class="post-preview">
+	<div class="post-preview__header">
+		<img src="http://lorempixel.com/600/400/" alt="#">
+	</div>
+	<div class="post-preview__body">
+		<h1>{{ include.post.title }}</h1>
+
+		{% if include.post.categories %}
+			{% for category in include.post.categories %}
+			<span>{{ category }}</span>
+			{% endfor %}
+		{% endif %}
+
+		{% if include.post.excerpt %}
+			<p>{{ include.post.excerpt }}</p>
+		{% endif %}
+	</div>
+</article>
