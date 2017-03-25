@@ -1,2 +1,7 @@
 _site/
 .sass-cache
+
+# TEMP
+_posts/
+_drafts/
+_projects/
