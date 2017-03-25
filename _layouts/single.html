@@ -4,11 +4,20 @@
 <body>
 	{% include header.html %}
 	<main>
-		<h1>{{ page.title }}</h1>
-		{% for category in page.categories %}
-		<span>{{ category }}</span>
-		{% endfor %}
-		{{ content }}
+		<section>
+			<h1>{{ page.title }}</h1>
+			{% for category in page.categories %}
+			<span>{{ category }}</span>
+			{% endfor %}
+			{{ content }}
+		</section>
+		{% if page.images %}
+		<section>
+			{% for image in page.images %}
+			<img src="{{ image }}" alt="#">
+			{% endfor %}
+		</section>
+		{% endif %}
 	</main>
 	{% include footer.html %}
 </body>
