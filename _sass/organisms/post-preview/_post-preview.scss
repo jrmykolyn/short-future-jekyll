@@ -1,0 +1,59 @@
+// --------------------------------------------------
+// VARIABLES
+// --------------------------------------------------
+$post-preview: '.post-preview';
+
+
+// --------------------------------------------------
+// PLACEHOLDERS
+// --------------------------------------------------
+// Write shared styles in placeholder rules here, then extend them from specific selectors below.
+
+
+// --------------------------------------------------
+// SELECTORS
+// --------------------------------------------------
+
+#{$post-preview} {
+	width: 100%;
+	height: auto;
+
+	// Positional styles.
+	&:not( :last-child ) {
+		margin-bottom: 2rem;
+	}
+
+	// Pseudo elems.
+	&:after {
+		content: '';
+		display: table;
+		clear: both;
+	}
+
+	&__header,
+	&__body {
+		width: 100%;
+		height: auto;
+		float: left;
+	}
+
+	&__header {
+		img {
+			width: 100%;
+			display: block;
+		}
+
+		@media ( min-width: 768px ) {
+			width: 64%;
+			margin-right: 2%;
+		}
+	}
+
+	&__body {
+		@media ( min-width: 768px ) {
+			width: 34%;
+			border-top: 0.1rem solid #000;
+			padding-top: 1rem;
+		}
+	}
+}
