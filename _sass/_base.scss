@@ -23,6 +23,12 @@ main {
 	max-width: 120rem;
 	margin: 0 auto;
 	padding: 3rem 0;
+
+	&:after {
+		content: '';
+		display: table;
+		clear: both;
+	}
 }
 
 img {
@@ -45,39 +51,43 @@ a {
 	text-decoration: none;
 }
 
-article h1,
-article h2 {
+h1,
+h2 {
 	margin: 0;
 	text-transform: uppercase;
 }
 
-article h1 {
+h1 {
 	margin-bottom: 1rem;
 	font-size: 2rem;
 	letter-spacing: 0.1rem;
 }
 
-article ul {
-	list-style: none;
-	margin: 0;
-	margin-bottom: 1.5rem;
-	padding: 0;
-}
-
-article li {
+h2 {
 	display: inline-block;
-	margin: 0 1rem 1rem 0;
-}
-
-article h2 {
-	display: inline-block;
-	border-bottom: 0.1rem solid #222;
+	color: #58585b;
+	border-bottom: 0.1rem solid #58585b;
 	font-size: 1.4rem;
 	line-height: 1.5;
 }
 
-article p {
+ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+li {
+	display: inline-block;
+	margin: 0 1rem 1rem 0;
+}
+
+
+p {
+	color: #58585b;
 	margin-top: 0;
+	line-height: 1.6;
+	letter-spacing: 0.05px;
 
 	&:last-child {
 		margin-bottom: 0;

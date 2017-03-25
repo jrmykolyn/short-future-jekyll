@@ -4,15 +4,23 @@
 <body>
 	{% include header.html %}
 	<main>
-		<section>
-			<h1>{{ page.title }}</h1>
-			{% for category in page.categories %}
-			<span>{{ category }}</span>
-			{% endfor %}
-			{{ content }}
+		<section class="project-section--content">
+			<div class="project-info--main">
+				<h1>{{ page.title }}</h1>
+				<ul>
+					{% for category in page.categories %}
+					<li>
+						<h2>{{ category }}</h2>
+					</li>
+					{% endfor %}
+				</ul>
+			</div>
+			<div class="project-info--supporting">
+				{{ content }}
+			</div>
 		</section>
 		{% if page.images %}
-		<section>
+		<section class="project-section--images">
 			{% for image in page.images %}
 			<img src="{{ image }}" alt="#">
 			{% endfor %}

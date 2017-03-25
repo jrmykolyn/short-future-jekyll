@@ -1,0 +1,72 @@
+// --------------------------------------------------
+// VARIABLES
+// --------------------------------------------------
+$project-section: '.project-section';
+$project-info: '.project-info';
+
+
+// --------------------------------------------------
+// PLACEHOLDERS
+// --------------------------------------------------
+// Write shared styles in placeholder rules here, then extend them from specific selectors below.
+
+
+// --------------------------------------------------
+// SELECTORS
+// --------------------------------------------------
+#{$project-section} {
+	&:after {
+		content: '';
+		display: table;
+		clear: both;
+	}
+
+	&--content {
+		@extend #{$project-section};
+
+		border-top: 0.1rem solid #000;
+		border-bottom: 0.1rem solid #000;
+		padding: 3rem 0;
+
+		&:not( :last-child ) {
+			margin-bottom: 5rem;
+		}
+	}
+
+	&--images {
+		@extend #{$project-section};
+
+		img {
+			width: 100%;
+			display: block;
+
+			&:not( :last-child ) {
+				margin-bottom: 2rem;
+			}
+		}
+	}
+}
+
+#{$project-info} {
+	&--main,
+	&--supporting {
+		width: 100%;
+		float: left;
+	}
+
+	&--main {
+		margin-bottom: 1rem;
+
+		@media ( min-width: 768px ) {
+			width: 34%;
+			margin-bottom: 0;
+			margin-right: 2%;
+		}
+	}
+
+	&--supporting {
+		@media ( min-width: 768px ) {
+			width: 64%;
+		}
+	}
+}
