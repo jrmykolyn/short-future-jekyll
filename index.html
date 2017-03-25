@@ -5,7 +5,16 @@
 	{% include head.html %}
 <body>
 	{% include header.html %}
-	<main></main>
+	<main>
+	{% if site.projects %}
+	<ul></ul>
+		{% for project in site.projects %}
+		<li>
+			<a href="{{ project.url }}">{{ project.title }}</a>
+		</li>
+		{% endfor %}
+	{% endif %}
+	</main>
 	{% include footer.html %}
 </body>
 </html>
