@@ -5,15 +5,17 @@
 	{% include head.html %}
 <body>
 	{% include header.html %}
+
 	<main>
+
 	{% if site.projects %}
-	<ul>
 		{% for project in site.projects %}
 			{% include post-preview.html post=project %}
 		{% endfor %}
-	</ul>
 	{% endif %}
+
 	</main>
+
 	{% include footer.html %}
 </body>
 </html>

@@ -9,11 +9,15 @@
 			<a href="{{ include.post.url }}">{{ include.post.title }}</a>
 		</h1>
 
+		<ul>
 		{% if include.post.categories %}
 			{% for category in include.post.categories %}
-			<span>{{ category }}</span>
+			<li>
+				<h2>{{ category }}</h2>
+			</li>
 			{% endfor %}
 		{% endif %}
+		</ul>
 
 		{% if include.post.excerpt %}
 			<p>{{ include.post.excerpt }}</p>
