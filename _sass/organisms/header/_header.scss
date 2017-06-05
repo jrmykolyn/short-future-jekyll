@@ -1,0 +1,28 @@
+// --------------------------------------------------
+// VARIABLES
+// --------------------------------------------------
+
+
+// --------------------------------------------------
+// PLACEHOLDERS
+// --------------------------------------------------
+// Write shared styles in placeholder rules here, then extend them from specific selectors below.
+
+
+// --------------------------------------------------
+// SELECTORS
+// --------------------------------------------------
+header {
+	width: 100%;
+	height: auto;
+	display: flex;
+	justify-content: center;
+	background-color: #EFEFEF; /// TEMP
+	margin: 0;
+	padding: 4rem 0;
+
+	@media ( min-width: 768px ) {
+		padding-top: 6rem;
+		padding-bottom: 6rem;
+	}
+}

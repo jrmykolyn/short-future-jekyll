@@ -1,0 +1,38 @@
+// --------------------------------------------------
+// VARIABLES
+// --------------------------------------------------
+// Add any SASS variables that are specific to this file here.
+$logo: '.logo';
+$logo-wrap: #{$logo}-wrap;
+
+
+// --------------------------------------------------
+// PLACEHOLDERS
+// --------------------------------------------------
+// Write shared styles in placeholder rules here, then extend them from specific selectors below.
+
+
+// --------------------------------------------------
+// SELECTORS
+// --------------------------------------------------
+#{$logo-wrap} {
+	width: auto;
+	max-width: 60%; /// TEMP
+}
+
+ #{$logo} {
+	 transition: all 0.25s;
+
+	 // State
+	 &:hover,
+	 &:focus {
+		 opacity: 0.9;
+	 }
+ }
+
+ #{$logo}__image {
+	 width: auto;
+	 max-width: 100%;
+	 height: auto;
+	 display: block;
+ }
