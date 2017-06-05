@@ -1,7 +1,17 @@
-_site/
-.sass-cache
+# OS
+.DS_Store
 
-# TEMP
-_posts/
-_drafts/
-_projects/
+# Styles
+.sass-cache/
+
+# Node
+node_modules/
+npm-debug.log
+
+# Testing
+.nyc_output
+.coveralls.yml
+
+# Misc
+temp/
+tmp/
