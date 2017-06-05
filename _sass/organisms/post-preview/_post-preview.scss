@@ -2,6 +2,8 @@
 // VARIABLES
 // --------------------------------------------------
 $post-preview: '.post-preview';
+$post-preview-title: #{$post-preview}-title;
+$post-preview-categories: #{$post-preview}-categories;
 
 
 // --------------------------------------------------
@@ -13,7 +15,6 @@ $post-preview: '.post-preview';
 // --------------------------------------------------
 // SELECTORS
 // --------------------------------------------------
-
 #{$post-preview} {
 	width: 100%;
 	height: auto;
@@ -59,5 +60,22 @@ $post-preview: '.post-preview';
 			border-top: 0.1rem solid #000;
 			padding-top: 1rem;
 		}
+	}
+}
+
+#{$post-preview-title} {
+	@media ( min-width: 768px ) {
+		font-size: 2.6rem;
+	}
+}
+
+#{$post-preview-categories} {
+
+}
+
+#{$post-preview-categories}__item {
+	// Descendant elems.
+	& * {
+		font-size: 1.2rem;
 	}
 }
