@@ -24,8 +24,8 @@ $project-info: '.project-info';
 	&--content {
 		@extend #{$project-section};
 
-		border-top: 0.1rem solid #000;
-		border-bottom: 0.1rem solid #000;
+		border-top: 0.1rem solid map-get( $colorMap, rich-black );
+		border-bottom: 0.1rem solid map-get( $colorMap, rich-black );
 		padding: 3rem 0;
 
 		&:not( :last-child ) {

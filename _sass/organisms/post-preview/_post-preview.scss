@@ -57,7 +57,7 @@ $post-preview-categories: #{$post-preview}-categories;
 			display: block;
 
 			width: 34%;
-			border-top: 0.1rem solid #000;
+			border-top: 0.1rem solid map-get( $colorMap, rich-black );
 			padding-top: 1rem;
 		}
 	}
