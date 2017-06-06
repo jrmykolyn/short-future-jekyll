@@ -19,7 +19,7 @@ var PATHS = new PathMap( {
 // --------------------------------------------------
 // DEFINE TASKS
 // --------------------------------------------------
-gulp.task( 'default', [ 'styles' ] );
+gulp.task( 'default', [ 'styles', 'watch' ] );
 
 gulp.task( 'styles', [ 'sass' ] );
 
@@ -37,3 +37,7 @@ gulp.task( 'sass', function() {
 		)
 		.pipe( gulp.dest( PATHS.cssSrc ) );
 } );
+
+gulp.task( 'watch', function() {
+	gulp.watch( '_sass/**/*.scss', [ 'sass' ] );
+} )
