@@ -17,8 +17,11 @@
   },
   "homepage": "https://github.com/jrmykolyn/short-future-jekyll#readme",
   "devDependencies": {
+    "bourbon": "^4.3.4",
     "gulp": "^3.9.1",
     "gulp-sass": "^3.1.0",
-    "sfco-path-map": "^0.4.1"
+    "sfco-path-map": "^0.4.1",
+    "sfco-sass-utils": "^1.18.1",
+    "susy": "^2.2.12"
   }
 }
