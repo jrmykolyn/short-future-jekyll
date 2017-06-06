@@ -1,3 +1,9 @@
+// Vendor
+@import 'bourbon';
+@import 'susy';
+@import 'sfco-sass-utils';
+
+// Project
 @import 'config/manifest';
 @import 'base/manifest';
 @import 'molecules/manifest';
