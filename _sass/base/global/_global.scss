@@ -18,21 +18,9 @@ body {
 	font-size: 1.4rem;
 }
 
-.footer {
-	margin-top: 6rem;
-}
-
-.footer__inner {
-	width: 96%;
-	max-width: 120rem;
-	margin: 0 auto;
-	border-top: 0.1rem solid map-get( $colorMap, rich-black );
-	padding: 4rem 0;
-}
-
 main {
-	width: 94%;
-	max-width: 113.5rem;
+	@extend %__grid--inset;
+
 	margin: 0 auto;
 	padding: 3rem 0;
 

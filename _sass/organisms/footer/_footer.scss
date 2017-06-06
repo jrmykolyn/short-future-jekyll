@@ -1,0 +1,28 @@
+// --------------------------------------------------
+// VARIABLES
+// --------------------------------------------------
+// Add any SASS variables that are specific to this file here.
+
+
+// --------------------------------------------------
+// PLACEHOLDERS
+// --------------------------------------------------
+// Write shared styles in placeholder rules here, then extend them from specific selectors below.
+
+
+// --------------------------------------------------
+// SELECTORS
+// --------------------------------------------------
+.footer {
+	@include dims( 100% auto );
+
+	margin-top: 6rem;
+}
+
+.footer__inner {
+	@extend %__grid--inset;
+
+	margin: 0 auto;
+	border-top: 0.1rem solid map-get( $colorMap, rich-black );
+	padding: 4rem 0;
+}
