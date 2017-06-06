@@ -13,7 +13,7 @@ body {
 }
 
 body {
-	color: map-get( $colorMap, grey--dark );
+	color: getColor( grey--dark );
 	font-family: 'Lato', Helvetica, Arial, sans-serif;
 	font-size: 1.4rem;
 }
@@ -84,8 +84,8 @@ h1 {
 
 h2 {
 	display: inline-block;
-	color: map-get( $colorMap, grey );
-	border-bottom: 0.1rem solid map-get( $colorMap, grey );
+	color: getColor( grey );
+	border-bottom: 0.1rem solid getColor( grey );
 	font-size: 1.4rem;
 	line-height: 1.5;
 }
@@ -103,7 +103,7 @@ li {
 
 
 p {
-	color: map-get( $colorMap, grey );
+	color: getColor( grey );
 	margin-top: 0;
 	line-height: 1.6;
 	letter-spacing: 0.05px;
