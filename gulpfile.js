@@ -27,7 +27,7 @@ gulp.task( 'sass', function() {
 	gulp.src( PATHS.sassSrc )
 		.pipe(
 			sass( {
-				outputStyle: 'expanded',
+				outputStyle: 'compressed',
 				includePaths: [
 					'./node_modules/bourbon/app/assets/stylesheets',
 					'./node_modules/susy/sass',
