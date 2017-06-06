@@ -16,8 +16,6 @@ var PATHS = new PathMap( {
 	sassSrc: './_sass/styles.scss'
 } );
 
-console.log( PATHS ); /// TEMP
-
 // --------------------------------------------------
 // DEFINE TASKS
 // --------------------------------------------------
