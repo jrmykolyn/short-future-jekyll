@@ -27,7 +27,12 @@ gulp.task( 'sass', function() {
 	gulp.src( PATHS.sassSrc )
 		.pipe(
 			sass( {
-				outputStyle: 'expanded'
+				outputStyle: 'expanded',
+				includePaths: [
+					'./node_modules/bourbon/app/assets/stylesheets',
+					'./node_modules/susy/sass',
+					'./node_modules/sfco-sass-utils'
+				]
 			} )
 		)
 		.pipe( gulp.dest( PATHS.cssSrc ) );
