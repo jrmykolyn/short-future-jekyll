@@ -1,0 +1,30 @@
+// --------------------------------------------------
+// VARIABLES
+// --------------------------------------------------
+// Add any SASS variables that are specific to this file here.
+
+
+// --------------------------------------------------
+// PLACEHOLDERS
+// --------------------------------------------------
+// Write shared styles in placeholder rules here, then extend them from specific selectors below.
+
+
+// --------------------------------------------------
+// SELECTORS
+// --------------------------------------------------
+.page-title {
+	@include set( margin padding, 0 );
+
+	color: getColor( rich-black );
+	font-size: 2.4rem;
+	font-weight: 700;
+	line-height: 1;
+	letter-spacing: 0.5rem;
+	text-transform: uppercase;
+	text-align: center;
+
+	@media ( min-width: 768px ) {
+		font-size: 3.6rem;
+	}
+}
