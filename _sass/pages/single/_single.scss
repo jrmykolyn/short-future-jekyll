@@ -24,8 +24,7 @@ $project-info: '.project-info';
 	&--content {
 		@extend #{$project-section};
 
-		border-top: 0.1rem solid getColor( rich-black );
-		border-bottom: 0.1rem solid getColor( rich-black );
+		border-top: $border-width--hairline solid getColor( rich-black );
 		padding: 3rem 0;
 
 		&:not( :last-child ) {
