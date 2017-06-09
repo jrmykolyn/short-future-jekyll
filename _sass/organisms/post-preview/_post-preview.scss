@@ -60,15 +60,23 @@ $post-preview-categories: #{$post-preview}-categories;
 	// Child elems.
 	&__header,
 	&__body {
-		width: 100%;
-		height: auto;
-		float: left;
+		@include dims( 100% )
 	}
 
 	&__header {
+		background-color: getColor( rich-black );
+
 		img {
 			width: 100%;
 			display: block;
+		}
+
+		a {
+			display: block;
+
+			@include on( hover focus ) {
+				opacity: 0.5;
+			}
 		}
 
 		// Media queries

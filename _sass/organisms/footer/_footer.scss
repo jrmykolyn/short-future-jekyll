@@ -34,6 +34,9 @@
 
 .footer-block {
 	&--main {
-		@include span( 8 of 12 );
+		// Media queries
+		@media ( min-width: 768px ) {
+			@include span( 8 of 12 );
+		}
 	}
 }
