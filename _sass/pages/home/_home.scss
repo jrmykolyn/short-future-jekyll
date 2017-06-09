@@ -13,27 +13,10 @@
 // --------------------------------------------------
 // SELECTORS
 // --------------------------------------------------
-.footer {
-	@include dims( 100% auto );
-
-	margin-top: 6rem;
-
-	// Media queries
-	@media ( min-width: 768px ) {
-		margin-top: 8rem;
-	}
-}
-
-.footer__inner {
-	@extend %__grid--inset;
-
-	margin: 0 auto;
-	border-top: $border-width--thick solid getColor( rich-black );
-	padding: 4rem 0;
-}
-
-.footer-block {
-	&--main {
-		@include span( 8 of 12 );
+.page--home {
+	main {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
 	}
 }

@@ -15,20 +15,23 @@ $project-info: '.project-info';
 // SELECTORS
 // --------------------------------------------------
 #{$project-section} {
-	&:after {
-		content: '';
-		display: table;
-		clear: both;
-	}
+	@include span( 12 of 12 );
+	@include clearfix;
 
 	&--content {
 		@extend #{$project-section};
 
-		border-top: $border-width--hairline solid getColor( rich-black );
+		border-top: $border-width--thick solid getColor( rich-black );
 		padding: 3rem 0;
 
+		// Positional styles
 		&:not( :last-child ) {
-			margin-bottom: 5rem;
+			margin-bottom: 3rem;
+		}
+
+		// Media queries
+		@media ( min-width: 768px ) {
+			padding-top: 6rem;
 		}
 	}
 
@@ -47,25 +50,39 @@ $project-info: '.project-info';
 }
 
 #{$project-info} {
+	&--header,
 	&--main,
 	&--supporting {
-		width: 100%;
-		float: left;
+		@include span( 12 of 12 );
+	}
+
+	&--header {
+		margin-bottom: 2rem;
+
+		@media ( min-width: 768px ) {
+			@include span( 8 of 12 );
+
+			margin-bottom: 5rem;
+		}
 	}
 
 	&--main {
-		margin-bottom: 1rem;
+		margin-bottom: 2rem;
 
 		@media ( min-width: 768px ) {
-			width: 34%;
+			@include span( 8 of 12 );
+
 			margin-bottom: 0;
-			margin-right: 2%;
 		}
 	}
 
 	&--supporting {
 		@media ( min-width: 768px ) {
-			width: 64%;
+			@include span( 3 of 12 )
+			@include push( 1 of 12 );
+			@include last;
+
+			margin-bottom: 0;
 		}
 	}
 }

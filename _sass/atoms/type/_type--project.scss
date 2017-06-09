@@ -1,0 +1,73 @@
+// --------------------------------------------------
+// VARIABLES
+// --------------------------------------------------
+// Add any SASS variables that are specific to this file here.
+
+
+// --------------------------------------------------
+// PLACEHOLDERS
+// --------------------------------------------------
+// Write shared styles in placeholder rules here, then extend them from specific selectors below.
+
+
+// --------------------------------------------------
+// SELECTORS
+// --------------------------------------------------
+[class^="project-info"] {
+	.project--title,
+	.project--list-title,
+	.project--list-text {
+		font-family: 'Work Sans';
+	}
+
+	.project--list-title,
+	.project--list-text {
+		font-size: 1.3rem;
+	}
+
+	.project--title {
+		margin: 0;
+		font-size: 2.2rem;
+		font-weight: 600;
+		text-transform: initial;
+
+		@media ( min-width: 768px ) {
+			font-size: 3.2rem;
+		}
+	}
+
+	.project--list-title {
+		margin-bottom: 1rem;
+	}
+
+	.project--list-text {
+		&:not( :last-child ) {
+			margin-bottom: 0.3rem;
+		}
+	}
+
+	p {
+		font-size: 1.6rem;
+
+		@media ( min-width: 768px ) {
+			font-size: 1.8rem;
+		}
+	}
+
+	ul {
+		@include dims( 100% auto );
+
+		// Media queries
+		@media ( min-width: 768px ) {
+			padding-top: 0.3rem;
+		}
+	}
+
+	li {
+		display: block;
+
+		&:not( :last-child ) {
+			margin-bottom: 2rem;
+		}
+	}
+}
