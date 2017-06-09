@@ -19,9 +19,13 @@
   "devDependencies": {
     "bourbon": "^4.3.4",
     "gulp": "^3.9.1",
+    "gulp-browserify": "^0.5.1",
     "gulp-sass": "^3.1.0",
     "sfco-path-map": "^0.4.1",
     "sfco-sass-utils": "^1.18.1",
     "susy": "^2.2.12"
+  },
+  "dependencies": {
+    "sfco-string-scrambler": "^0.2.0"
   }
 }
