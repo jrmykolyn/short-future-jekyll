@@ -6,6 +6,7 @@
 // Vendor
 var gulp = require( 'gulp' );
 var sass = require( 'gulp-sass' );
+var browserify = require( 'gulp-browserify' );
 var PathMap = require( 'sfco-path-map' );
 
 // --------------------------------------------------
@@ -13,13 +14,15 @@ var PathMap = require( 'sfco-path-map' );
 // --------------------------------------------------
 var PATHS = new PathMap( {
 	cssSrc: './css',
-	sassSrc: './_sass/styles.scss'
+	sassSrc: './_sass/styles.scss',
+	scriptsSrc: './_js/main.js',
+	scriptsDest: './js',
 } );
 
 // --------------------------------------------------
 // DEFINE TASKS
 // --------------------------------------------------
-gulp.task( 'default', [ 'styles', 'watch' ] );
+gulp.task( 'default', [ 'styles', 'scripts', 'watch' ] );
 
 gulp.task( 'styles', [ 'sass' ] );
 
@@ -38,6 +41,13 @@ gulp.task( 'sass', function() {
 		.pipe( gulp.dest( PATHS.cssSrc ) );
 } );
 
+gulp.task( 'scripts', function() {
+	gulp.src( PATHS.scriptsSrc )
+		.pipe( browserify() )
+		.pipe( gulp.dest( PATHS.scriptsDest ) );
+} );
+
 gulp.task( 'watch', function() {
 	gulp.watch( '_sass/**/*.scss', [ 'sass' ] );
+	gulp.watch( '_js/**/*.js', [ 'scripts' ] );
 } )
