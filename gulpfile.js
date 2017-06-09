@@ -5,8 +5,10 @@
 
 // Vendor
 var gulp = require( 'gulp' );
-var sass = require( 'gulp-sass' );
 var browserify = require( 'gulp-browserify' );
+var rename = require( 'gulp-rename' );
+var sass = require( 'gulp-sass' );
+var cleanCSS = require( 'gulp-clean-css' );
 var PathMap = require( 'sfco-path-map' );
 
 // --------------------------------------------------
@@ -24,13 +26,13 @@ var PATHS = new PathMap( {
 // --------------------------------------------------
 gulp.task( 'default', [ 'styles', 'scripts', 'watch' ] );
 
-gulp.task( 'styles', [ 'sass' ] );
+gulp.task( 'styles', [ 'sass', 'css:minify' ] );
 
 gulp.task( 'sass', function() {
 	gulp.src( PATHS.sassSrc )
 		.pipe(
 			sass( {
-				outputStyle: 'compressed',
+				outputStyle: 'expanded',
 				includePaths: [
 					'./node_modules/bourbon/app/assets/stylesheets',
 					'./node_modules/susy/sass',
@@ -38,6 +40,14 @@ gulp.task( 'sass', function() {
 				]
 			} )
 		)
+		.pipe( gulp.dest( PATHS.cssSrc ) );
+} );
+
+/// TODO[@jrmykolyn] - Ensure that `css:minify` task correctly minifies compiled SASS on initial invocation.
+gulp.task( 'css:minify', function() {
+	gulp.src( `${PATHS.cssSrc}/styles.css` )
+		.pipe( cleanCSS() )
+		.pipe( rename( { extname: '.min.css' } ) )
 		.pipe( gulp.dest( PATHS.cssSrc ) );
 } );
 
@@ -50,4 +60,4 @@ gulp.task( 'scripts', function() {
 gulp.task( 'watch', function() {
 	gulp.watch( '_sass/**/*.scss', [ 'sass' ] );
 	gulp.watch( '_js/**/*.js', [ 'scripts' ] );
-} )
+} );
