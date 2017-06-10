@@ -8,6 +8,9 @@
 node_modules/
 npm-debug.log
 
+# Jekyll
+_site/
+
 # Testing
 .nyc_output
 .coveralls.yml
