@@ -25,12 +25,7 @@ $post-preview-categories: #{$post-preview}-categories;
 	flex-wrap: nowrap;
 	background-color: getColor( white );
 	box-shadow: 0 0.3rem 2rem -0.3rem rgba( getColor( rich-black ), 0.2 );
-	margin: 0 auto;
-
-	// Positional styles.
-	&:not( :last-child ) {
-		margin-bottom: 2rem;
-	}
+	margin: 0 auto 2rem;
 
 	// Media queries
 	@media ( min-width: 480px ) {
@@ -51,9 +46,10 @@ $post-preview-categories: #{$post-preview}-categories;
 		min-height: 0;
 		flex-direction: row;
 		box-shadow: none;
+		margin-bottom: 3rem;
 
-		&:not( :last-child ) {
-			margin-bottom: 3rem;
+		&:last-child {
+			margin-bottom: 0;
 		}
 	}
 
