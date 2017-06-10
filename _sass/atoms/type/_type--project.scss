@@ -50,6 +50,11 @@
 	p {
 		font-size: 1.6rem;
 
+		a {
+			color: getColor( rich-black );
+			border-bottom: 0.1rem solid getColor( rich-black );
+		}
+
 		@media ( min-width: 768px ) {
 			font-size: 1.8rem;
 		}
