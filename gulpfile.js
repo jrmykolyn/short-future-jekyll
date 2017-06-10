@@ -9,6 +9,7 @@ var browserify = require( 'gulp-browserify' );
 var rename = require( 'gulp-rename' );
 var sass = require( 'gulp-sass' );
 var cleanCSS = require( 'gulp-clean-css' );
+var autoprefixer = require( 'gulp-autoprefixer' );
 var PathMap = require( 'sfco-path-map' );
 
 // --------------------------------------------------
@@ -40,6 +41,7 @@ gulp.task( 'sass', function() {
 				]
 			} )
 		)
+		.pipe( autoprefixer() )
 		.pipe( gulp.dest( PATHS.cssSrc ) );
 } );
 
