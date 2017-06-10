@@ -1,1 +1,1068 @@
-*{box-sizing:border-box;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}html{font-size:62.5%}html,body{margin:0;padding:0}body{color:#222;font-family:'Lora', Helvetica, Arial, sans-serif;font-size:1.4rem}main{margin:0 auto;padding:3rem 0 0}main::after{clear:both;content:"";display:table}header+main{padding-top:0}img{width:auto;max-width:100%;height:auto}h1,h2,h3,h4,h5,h6{margin-top:0;font-family:'Work Sans', Helvetica, Arial, sans-serif;font-weight:500;text-transform:uppercase;letter-spacing:0.1rem}a{color:inherit;text-decoration:none;transition:opacity 0.25s}a:hover,a:focus{opacity:0.8}a a:visited{color:inherit}h1,h2{margin:0}h1{margin-bottom:1rem;font-size:2rem}h2{display:inline-block;color:#58585b;border-bottom:0.1rem solid #58585b;font-size:1.4rem;line-height:1.5}ul{list-style:none;margin:0;padding:0}li{display:inline-block;margin:0 1rem 1rem 0}p{color:#58585b;margin-top:0;line-height:1.6;letter-spacing:0.05px}p:last-child{margin-bottom:0}main,.footer__inner{max-width:100%;margin-left:auto;margin-right:auto;width:94%;max-width:113.5rem}main:after,.footer__inner:after{content:" ";display:block;clear:both}.page-title{margin:0;padding:0;color:#000;font-size:2.4rem;font-weight:700;line-height:1;letter-spacing:0.5rem;text-transform:uppercase;text-align:center}@media (min-width: 768px){.page-title{font-size:3.6rem}}[class^="project-info"] .project--title,[class^="project-info"] .project--list-title,[class^="project-info"] .project--list-text{font-family:'Work Sans'}[class^="project-info"] .project--list-title,[class^="project-info"] .project--list-text{font-size:1.3rem}[class^="project-info"] .project--title{margin:0;font-size:2.2rem;font-weight:600;text-transform:initial;letter-spacing:0}@media (min-width: 768px){[class^="project-info"] .project--title{font-size:3.2rem}}[class^="project-info"] .project--list-title{margin-bottom:1rem}[class^="project-info"] .project--list-text:not(:last-child){margin-bottom:0.3rem}[class^="project-info"] p{font-size:1.6rem}@media (min-width: 768px){[class^="project-info"] p{font-size:1.8rem}}[class^="project-info"] ul{width:100%;height:auto}@media (min-width: 768px){[class^="project-info"] ul{padding-top:0.3rem}}[class^="project-info"] li{display:block}[class^="project-info"] li:not(:last-child){margin-bottom:2rem}.logo-wrap{width:auto;max-width:100%}.logo{transition:all 0.25s}.logo:hover,.logo:focus{opacity:0.9}.logo__image{width:auto;max-width:100%;height:auto;display:block}.footer{width:100%;height:auto;margin-top:6rem}@media (min-width: 768px){.footer{margin-top:8rem}}.footer__inner{margin:0 auto;border-top:.5rem solid #000;padding:4rem 0}@media (min-width: 768px){.footer-block--main{width:66.10169%;float:left;margin-right:1.69492%}}header{width:100%;height:auto;display:flex;justify-content:center;margin:0;padding:4rem 0}@media (min-width: 768px){header{padding-top:6rem;padding-bottom:6rem}}.post-preview{width:100%;height:auto;max-width:30rem;max-height:initial;display:flex;flex-direction:column;flex-wrap:nowrap;background-color:#fff;box-shadow:0 0.3rem 2rem -0.3rem rgba(0,0,0,0.2);margin:0 auto}.post-preview::after{clear:both;content:"";display:table}.post-preview:not(:last-child){margin-bottom:2rem}@media (min-width: 480px){.post-preview{width:49.15254%;float:left;margin-right:1.69492%;max-width:initial;max-height:initial;min-height:45rem;margin-left:0}.post-preview:nth-child(2n){float:right;margin-right:0}}@media (min-width: 768px){.post-preview{width:100%;float:left;margin-left:0;margin-right:0;min-height:0;flex-direction:row;box-shadow:none}.post-preview:not(:last-child){margin-bottom:3rem}}.post-preview__header,.post-preview__body{width:100%;height:100%}.post-preview__header{background-color:#000}.post-preview__header img{width:100%;display:block}.post-preview__header a{display:block}.post-preview__header a:hover{opacity:0.5}.post-preview__header a:focus{opacity:0.5}@media (min-width: 768px){.post-preview__header{width:66.10169%;float:left;margin-right:1.69492%}}.post-preview__body{display:block;flex:1 0 auto;padding:2rem}@media (min-width: 768px){.post-preview__body{width:32.20339%;float:left;margin-right:1.69492%;float:right;margin-right:0;border-top:.5rem solid #000;padding:0;padding-top:1.5rem}}.post-preview-title{font-size:1.8rem;font-weight:700}@media (min-width: 768px){.post-preview-title{font-size:2.2rem}}.post-preview-categories:not(:last-child){margin-bottom:2rem}@media (min-width: 768px){.post-preview-categories:not(:last-child){margin-bottom:3rem}}.post-preview-categories__item *{font-size:1.2rem}.page--home main{display:flex;flex-direction:row;flex-wrap:wrap}.project-section,.project-section--content,.project-section--images{width:100%;float:left;margin-left:0;margin-right:0}.project-section::after,.project-section--content::after,.project-section--images::after{clear:both;content:"";display:table}.project-section--content{border-top:.5rem solid #000;padding:3rem 0}.project-section--content:not(:last-child){margin-bottom:3rem}@media (min-width: 768px){.project-section--content{padding-top:6rem}}.project-section--images img{width:100%;display:block}.project-section--images img:not(:last-child){margin-bottom:2rem}.project-info--header,.project-info--main,.project-info--supporting{width:100%;float:left;margin-left:0;margin-right:0}.project-info--header{margin-bottom:2rem}@media (min-width: 768px){.project-info--header{width:66.10169%;float:left;margin-right:1.69492%;margin-bottom:5rem}}.project-info--main{margin-bottom:2rem}@media (min-width: 768px){.project-info--main{width:66.10169%;float:left;margin-right:1.69492%;margin-bottom:0}}@media (min-width: 768px){.project-info--supporting{width:23.72881%;float:left;margin-right:1.69492%;margin-left:8.47458%;float:right;margin-right:0;margin-bottom:0}}
+/*
+@styleguide
+
+@title get (@function)
+
+Function is a wrapper around the native SASS `map-get` function.
+
+- @param {String} `$map` - *Target SASS map.*
+- @param {String} `$key` - *Target map key.*
+- @param {String} `$fallback` - *Value to return if target key does not yield a value.*
+- @return {Mixed}
+
+### Usage
+```
+// Input
+div {
+    display: get( $demoMap, display );
+}
+
+// Output
+div {
+    display: block;
+}
+
+
+// NOTE:
+// Example above assumes that `$demoMap` incudes a key of 'display', which in turn holds a value of 'block'.
+```
+```
+// Input
+div {
+    overflow: get( $demoMap, overflow, hidden );
+}
+
+// Output
+div {
+    overflow: hidden;
+}
+
+
+// NOTE:
+// Example above assumes that `$demoMap` DOES NOT include a key of 'display'. In this case, the fallback value ('hidden') is returned.
+```
+*/
+/*
+@styleguide
+
+@title getColor (@function)
+
+Function fetches the specified color from a 'set' of colors, defined on $colorMap.
+
+- @param {String} `$colorName` - *The color to fetch.*
+- @param {String} `$colorSet` - *The set/group of colors which contains `$colorName`.*
+- @return {String}
+
+### Usage
+```
+// Input
+p {
+    color: getColor( black );
+}
+
+// Output
+p {
+    color: #000;
+}
+
+
+// NOTE:
+// Example above assumes that $colorMap includes the key 'black', set to a value of #000.
+```
+```
+// Input
+h1 {
+    background-color: getColor( base, placeholder );
+}
+
+// Output
+h1 {
+    background-color: #FAFAFA;
+}
+
+// NOTE:
+// Example above assumes that $colorMap includes the $colorSet 'placeholder',
+// which in turn has a key called 'base' set to value of #FAFAFA.
+```
+*/
+/*
+@styleguide
+
+@title getFont (@function)
+
+Function fetches the specified font from a 'set' of fonts, defined on $fontMap.
+
+- @param {String} `$fontName` - *The font to fetch.*
+- @param {String} `$set` - *The set/group of fonts which contains `$fontName`.*
+- @return {String}
+
+### Usage
+```
+// Input
+body {
+    font-family: getFont( copy );
+}
+
+// Output
+body {
+    font-family: "Times New Roman", serif;
+}
+
+
+// NOTE:
+// Example above assumes that $fontMap includes the $set 'default',
+// which in turn has a key called 'copy' set to a value of "'Times New Roman', serif".
+```
+```
+// Input
+h1 {
+    font-family: getFont( primary, display );
+}
+
+// Output
+h1 {
+    font-family: "Helvetica", "Arial", sans-serif;
+}
+
+// NOTE:
+// Example above assumes that $fontMap includes the $set 'display',
+// which in turn has a key called 'primary' set to a value of "'Helvetica', 'Arial', serif".
+```
+*/
+/*
+@styleguide
+
+@title getPath (@function)
+
+TODO[@jrmykolyn] - Add description for `getPath()`.
+
+- @param {String} `$pathName`
+- @param {String} `$set`
+- @param {String}
+
+### Usage
+```
+// Input
+.icon--share {
+    background-image: url(getPath(images)/icon--share.png);
+}
+
+// Output
+.icon--share {
+    background-image: url(./assets/images/icon--share.png);
+}
+
+
+// NOTE:
+// Example above assumes that $pathMap includes the $set 'default',
+// which in turn has a key called `images` set to a value of `./assets/images`.
+```
+*/
+/*
+@styleguide
+
+@title getAspect (@function)
+
+Given a set of 2x numbers (`$dims`), function returns their relationship as either an integer or floating point number.
+
+- @param {String} `$dims` - Space-delimited set of dimensions. Function expects the *first number* to be the *width*, *second* to be the *height*.
+- @param {Boolean} `$returnHeightVal` - If set to `false`, function will return HEIGHT/WIDTH. Argument is set to `true` by default.
+- @return {Number}
+
+### Usage
+```
+// Input
+div {
+    width: 100%;
+    height: getAspect( 16 9, false )*100%;
+}
+
+// Output
+div {
+    width: 100%;
+    height: 56.25%;
+}
+```
+```
+// Input
+span:before {
+    content: "500 is getAspect(500 200) times greater than 200."
+}
+
+// Output
+span:before {
+    content: "500 is 2.5 times greater than 200.";
+}
+```
+*/
+/*
+@styleguide
+
+@title applyAspect (@function)
+
+Given a set of 2x numbers (`$dims`) and a value (`$value`), function applies the aspect ratio to the value and returns the result.
+
+- @param {String} `$dims` - *Space-delimited set of dimensions. Function expects the first number to be the width, second to be the height.*
+- @param {String|Number} `$value` - *Value against which the aspect ratio will be applied. Defaults to '100%' if no argument is provided.*
+- @return {Number}
+
+### Usage
+```
+// Input
+div {
+    width: applyAspect( 3 4 );
+    height: applyAspect( 2 3, 600px );
+}
+
+// Output
+div {
+    width: 75%;
+    height: 400px;
+}
+```
+*/
+/*
+@styleguide
+
+@title on (@mixin)
+
+For each valid 'state' (eg. pseduo-selector) received via the `$states` argument,
+mixin wraps the provided `@content` declarations in a new CSS rule.
+Note that the mixin validates each 'state' against an internally defined whitelist.
+
+- @param {String} `$states` - The list of 'states' for which to apply the provided styles
+
+### Usage
+```
+// Input
+a {
+    @include on( hover ) { background: red; }
+}
+
+// Output
+a:hover {
+    background: red;
+}
+```
+```
+// Input
+a {
+    @include on( focus active ) { margin-right: 10px; }
+}
+
+// Output
+a:focus,
+a:active {
+    margin-right: 10px;
+}
+```
+*/
+/*
+@styleguide
+
+@title set (@mixin)
+
+Mixin creates 1x declaration for each item in a list of properties (`$props`).
+The value of each declaration is set to `$value`.
+
+- @param {String} `$props`
+- @param {String|Number} `$value`
+
+### Usage
+```
+// Input
+p {
+    @include set( margin padding, 0 );
+}
+
+// Output
+p {
+    margin: 0;
+    padding: 0;
+}
+```
+```
+// Input
+img {
+    @include set( min-height max-height, 100% );
+}
+
+// Output
+img {
+    min-height: 100%;
+    max-height: 100%;
+}
+```
+*/
+/*
+@styleguide
+
+@title pseudo (@mixin)
+
+For each valid pseudo element received via the `$elements` argument,
+mixin wraps the provided `@content` declarations in a new CSS rule.
+Note that the mixin validates each 'element' against an internally defined whitelist.
+
+- @param {String} `$elements`
+
+### Usage
+```
+// Input
+div {
+    @include pseudo( before ) {
+        content: 'This is my before element content';
+        display: block;
+        color: white;
+        background-color: black;
+    }
+}
+
+// Output
+div::before {
+    content: 'This is my before element content';
+    display: block;
+    color: white;
+    background-color: black;
+}
+```
+*/
+/*
+@styleguide
+
+@title descendant (@mixin)
+
+For each valid 'descendant keyword' received via the `$descendants` argument,
+mixin wraps the provided `@content` declarations in a new CSS rule.
+Note that the mixin validates each 'descendant keyword' against an internally defined whitelist.
+
+- @param {String} `$descendants`
+
+### Usage
+```
+// Input
+section {
+    @include descendant( first last ) {
+        color: blue;
+        margin-bottom: 30px;
+    }
+}
+
+// Output
+section > *:first-child,
+section > *:last-child, {
+    color: blue;
+    margin-bottom: 30px;
+}
+```
+*/
+/*
+@styleguide
+
+@title parent (@mixin)
+
+Mixin allows for the building of rules based on the parent of the current selector.
+By default, including the `parent` mixin with no arguments will result in a new rule, with `* >` prepended to the current selector.
+If the mixin is called with 1x argument, the '*' will be replaced with the value provided.
+If the mixin is called with 2x arguments, the second value will be appended to the first (eg. {TYPE}{MODIFIER}).
+
+- @param {String} `$type`
+- @param {String} `$modifier`
+
+### Usage
+```
+// Input
+section {
+    @include parent {
+        background-color: grey;
+    }
+}
+
+// Output
+* > section {
+    background-color: grey;
+}
+```
+```
+// Input
+p {
+    @include parent( li ) {
+        text-decoration: underline;
+    }
+}
+
+// Output
+li > p {
+    text-decoration: underline;
+}
+```
+```
+// Input
+li {
+    @include parent( ul, '.is-active' ) {
+        font-weight: 700;
+    }
+}
+
+// Output
+ul.is-active li {
+    font-weight: 700;
+}
+```
+*/
+/*
+@styleguide
+
+@title max-size (@mixin)
+
+Mixin allows for quick setting of the `max-width` and `max-height` properties on a given element.
+
+If the list argument contains 1x item: both properties will be set to the provided value.
+
+If the list argument contains 2x or more items: `max-width` will be set equal to the first value; `max-height` will be set equal to the second value
+
+- @param {String} `$maxDims` - A list of values
+
+### Usage
+```
+// Input
+div {
+    @include max-size( 50% );
+}
+
+// Output
+div {
+    max-width: 50%;
+    max-height: 50%;
+}
+```
+```
+// Input
+div {
+    @include max-size( 100% 400px );
+}
+
+// Output
+div {
+    max-width: 100%;
+    max-height: 400px;
+}
+```
+*/
+/*
+@styleguide
+
+@title min-size (@mixin)
+
+Mixin allows for quick setting of the `min-width` and `min-height` properties on a given element.
+
+If the list argument contains 1x item: both properties will be set to the provided value.
+
+If the list arguments contains 2x or more items: `max-width` will be set equal to the first value; `max-height` will be set equal to the second value
+
+- @param {String} `$minDims` - A list of values
+
+### Usage
+```
+// Input
+div {
+    @include min-size( 200px );
+}
+
+// Output
+div {
+    min-width: 200px;
+    min-height: 200px;
+}
+```
+```
+// Input
+div {
+    @include min-size( 25% 600px );
+}
+
+// Output
+div {
+    min-width: 25%;
+    min-height: 600px;
+}
+```
+*/
+/*
+@styleguide
+
+@title print-map (@mixin)
+
+Given a map, mixin prints 1x declaration for every key/value pair. NOTE: Mixin DOES NOT support nested maps.
+
+- @param {Map} `$map`
+
+### Usage
+```
+// Input
+p {
+    @include print-map( $fontStylesMap );
+}
+
+// Output
+p {
+    font-size: 1.4rem;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+
+// NOTE:
+// Example above assumes that $fontStylesMap includes the following keys: `font-size`; `font-weight`; `text-transform`.
+```
+*/
+/*
+@styleguide
+
+@title dims (@mixin)
+
+Mixin allows for quick setting of the `width` and `height` properties on a given element.
+
+If the list argument contains 1x item: both properties will be set to the provided value.
+
+If the list argument contains 2x or more items: `width` will be set equal to the first value; `height` will be set equal to the second value
+
+In the case where 2x values are provided, `null` will be ignored.
+
+NOTE: Mixin is a port of the Bourbon library's 'size', which is currently throwing deprecation warnings.
+
+- @param {String} `$dims` - A list of values
+
+### Usage
+```
+// Input
+.my-elem {
+    @include dims( 100px );
+}
+
+
+// Output
+.my-elem {
+    width: 100px;
+    height: 100px;
+}
+```
+```
+// Input
+.row {
+    @include dims( 100% 200px );
+}
+
+// Output
+.row {
+    width: 100%;
+    height: 200px;
+}
+```
+```
+// Input
+section {
+    @include dims( 100% null );
+}
+
+// Output
+section {
+    width: 100%;
+}
+```
+```
+// Input
+.overlay {
+    @include dims( null 100% );
+}
+
+// Output
+.overlay {
+    height: 100%;
+}
+```
+*/
+* {
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  color: #222;
+  font-family: 'Lora', Helvetica, Arial, sans-serif;
+  font-size: 1.4rem;
+}
+
+main {
+  margin: 0 auto;
+  padding: 3rem 0 0;
+}
+
+main::after {
+  clear: both;
+  content: "";
+  display: table;
+}
+
+header + main {
+  padding-top: 0;
+}
+
+img {
+  width: auto;
+  max-width: 100%;
+  height: auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-top: 0;
+  font-family: 'Work Sans', Helvetica, Arial, sans-serif;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  transition: opacity 0.25s;
+}
+
+a:hover, a:focus {
+  opacity: 0.8;
+}
+
+a a:visited {
+  color: inherit;
+}
+
+h1,
+h2 {
+  margin: 0;
+}
+
+h1 {
+  margin-bottom: 1rem;
+  font-size: 2rem;
+}
+
+h2 {
+  display: inline-block;
+  color: #58585b;
+  border-bottom: 0.1rem solid #58585b;
+  font-size: 1.4rem;
+  line-height: 1.5;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  display: inline-block;
+  margin: 0 1rem 1rem 0;
+}
+
+p {
+  color: #58585b;
+  margin-top: 0;
+  line-height: 1.6;
+  letter-spacing: 0.05px;
+}
+
+p:last-child {
+  margin-bottom: 0;
+}
+
+main, .footer__inner {
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  width: 94%;
+  max-width: 113.5rem;
+}
+
+main:after, .footer__inner:after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+
+.page-title {
+  margin: 0;
+  padding: 0;
+  color: #000;
+  font-size: 2.4rem;
+  font-weight: 700;
+  line-height: 1;
+  letter-spacing: 0.5rem;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .page-title {
+    font-size: 3.6rem;
+  }
+}
+
+[class^="project-info"] .project--title,
+[class^="project-info"] .project--list-title,
+[class^="project-info"] .project--list-text {
+  font-family: 'Work Sans';
+}
+
+[class^="project-info"] .project--list-title,
+[class^="project-info"] .project--list-text {
+  font-size: 1.3rem;
+}
+
+[class^="project-info"] .project--title {
+  margin: 0;
+  font-size: 2.2rem;
+  font-weight: 600;
+  text-transform: initial;
+  letter-spacing: 0;
+}
+
+@media (min-width: 768px) {
+  [class^="project-info"] .project--title {
+    font-size: 3.2rem;
+  }
+}
+
+[class^="project-info"] .project--list-title {
+  margin-bottom: 1rem;
+}
+
+[class^="project-info"] .project--list-text:not(:last-child) {
+  margin-bottom: 0.3rem;
+}
+
+[class^="project-info"] p {
+  font-size: 1.6rem;
+}
+
+@media (min-width: 768px) {
+  [class^="project-info"] p {
+    font-size: 1.8rem;
+  }
+}
+
+[class^="project-info"] ul {
+  width: 100%;
+  height: auto;
+}
+
+@media (min-width: 768px) {
+  [class^="project-info"] ul {
+    padding-top: 0.3rem;
+  }
+}
+
+[class^="project-info"] li {
+  display: block;
+}
+
+[class^="project-info"] li:not(:last-child) {
+  margin-bottom: 2rem;
+}
+
+.logo-wrap {
+  width: auto;
+  max-width: 100%;
+}
+
+.logo {
+  transition: all 0.25s;
+}
+
+.logo:hover, .logo:focus {
+  opacity: 0.9;
+}
+
+.logo__image {
+  width: auto;
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.footer {
+  width: 100%;
+  height: auto;
+  margin-top: 6rem;
+}
+
+@media (min-width: 768px) {
+  .footer {
+    margin-top: 8rem;
+  }
+}
+
+.footer__inner {
+  margin: 0 auto;
+  border-top: 0.5rem solid #000;
+  padding: 4rem 0;
+}
+
+@media (min-width: 768px) {
+  .footer-block--main {
+    width: 66.10169%;
+    float: left;
+    margin-right: 1.69492%;
+  }
+}
+
+header {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 4rem 0;
+}
+
+@media (min-width: 768px) {
+  header {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+  }
+}
+
+.post-preview {
+  width: 100%;
+  height: auto;
+  max-width: 30rem;
+  max-height: initial;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  background-color: #FFF;
+  box-shadow: 0 0.3rem 2rem -0.3rem rgba(0, 0, 0, 0.2);
+  margin: 0 auto;
+}
+
+.post-preview::after {
+  clear: both;
+  content: "";
+  display: table;
+}
+
+.post-preview:not(:last-child) {
+  margin-bottom: 2rem;
+}
+
+@media (min-width: 480px) {
+  .post-preview {
+    width: 49.15254%;
+    float: left;
+    margin-right: 1.69492%;
+    max-width: initial;
+    max-height: initial;
+    min-height: 45rem;
+    margin-left: 0;
+  }
+  .post-preview:nth-child(2n) {
+    float: right;
+    margin-right: 0;
+  }
+}
+
+@media (min-width: 768px) {
+  .post-preview {
+    width: 100%;
+    float: left;
+    margin-left: 0;
+    margin-right: 0;
+    min-height: 0;
+    flex-direction: row;
+    box-shadow: none;
+  }
+  .post-preview:not(:last-child) {
+    margin-bottom: 3rem;
+  }
+}
+
+.post-preview__header, .post-preview__body {
+  width: 100%;
+  height: 100%;
+}
+
+.post-preview__header {
+  background-color: #000;
+}
+
+.post-preview__header img {
+  width: 100%;
+  display: block;
+}
+
+.post-preview__header a {
+  display: block;
+}
+
+.post-preview__header a:hover {
+  opacity: 0.5;
+}
+
+.post-preview__header a:focus {
+  opacity: 0.5;
+}
+
+@media (min-width: 768px) {
+  .post-preview__header {
+    width: 66.10169%;
+    float: left;
+    margin-right: 1.69492%;
+  }
+}
+
+.post-preview__body {
+  display: block;
+  flex: 1 0 auto;
+  padding: 2rem;
+}
+
+@media (min-width: 768px) {
+  .post-preview__body {
+    width: 32.20339%;
+    float: left;
+    margin-right: 1.69492%;
+    float: right;
+    margin-right: 0;
+    border-top: 0.5rem solid #000;
+    padding: 0;
+    padding-top: 1.5rem;
+  }
+}
+
+.post-preview-title {
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+
+@media (min-width: 768px) {
+  .post-preview-title {
+    font-size: 2.2rem;
+  }
+}
+
+.post-preview-categories:not(:last-child) {
+  margin-bottom: 2rem;
+}
+
+@media (min-width: 768px) {
+  .post-preview-categories:not(:last-child) {
+    margin-bottom: 3rem;
+  }
+}
+
+.post-preview-categories__item * {
+  font-size: 1.2rem;
+}
+
+.page--home main {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.project-section, .project-section--content, .project-section--images {
+  width: 100%;
+  float: left;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.project-section::after, .project-section--content::after, .project-section--images::after {
+  clear: both;
+  content: "";
+  display: table;
+}
+
+.project-section--content {
+  border-top: 0.5rem solid #000;
+  padding: 3rem 0;
+}
+
+.project-section--content:not(:last-child) {
+  margin-bottom: 3rem;
+}
+
+@media (min-width: 768px) {
+  .project-section--content {
+    padding-top: 6rem;
+  }
+}
+
+.project-section--images img {
+  width: 100%;
+  display: block;
+}
+
+.project-section--images img:not(:last-child) {
+  margin-bottom: 2rem;
+}
+
+.project-info--header, .project-info--main, .project-info--supporting {
+  width: 100%;
+  float: left;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.project-info--header {
+  margin-bottom: 2rem;
+}
+
+@media (min-width: 768px) {
+  .project-info--header {
+    width: 66.10169%;
+    float: left;
+    margin-right: 1.69492%;
+    margin-bottom: 5rem;
+  }
+}
+
+.project-info--main {
+  margin-bottom: 2rem;
+}
+
+@media (min-width: 768px) {
+  .project-info--main {
+    width: 66.10169%;
+    float: left;
+    margin-right: 1.69492%;
+    margin-bottom: 0;
+  }
+}
+
+@media (min-width: 768px) {
+  .project-info--supporting {
+    width: 23.72881%;
+    float: left;
+    margin-right: 1.69492%;
+    margin-left: 8.47458%;
+    float: right;
+    margin-right: 0;
+    margin-bottom: 0;
+  }
+}
