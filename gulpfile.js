@@ -5,12 +5,20 @@
 
 // Vendor
 var gulp = require( 'gulp' );
-var browserify = require( 'gulp-browserify' );
 var rename = require( 'gulp-rename' );
+var PathMap = require( 'sfco-path-map' );
+
+// Vendor: Images
+var imageResize = require( 'gulp-image-resize' );
+
+// Vendor: Scripts
+var browserify = require( 'gulp-browserify' );
+
+// Vendor: Styles
 var sass = require( 'gulp-sass' );
 var cleanCSS = require( 'gulp-clean-css' );
 var autoprefixer = require( 'gulp-autoprefixer' );
-var PathMap = require( 'sfco-path-map' );
+
 
 // --------------------------------------------------
 // DECLARE VARS
@@ -20,7 +28,23 @@ var PATHS = new PathMap( {
 	sassSrc: './_sass/styles.scss',
 	scriptsSrc: './_js/main.js',
 	scriptsDest: './js',
+	imagesSrc: './_images/**/*.jpg',
+	imagesDest: './images'
 } );
+
+var IMAGE_SIZES = [ 100, 200, 400, 600, 768, 960, 1024, 1280 ];
+
+// --------------------------------------------------
+// DECLARE FUNCTIONS
+// --------------------------------------------------
+function processImages( src, dest, opts ) {
+	gulp.src( src )
+		.pipe( imageResize( opts ) )
+		.pipe( rename( function( path ) {
+			path.basename += `x${opts.width}`;
+		} ) )
+		.pipe( gulp.dest( dest ) )
+}
 
 // --------------------------------------------------
 // DEFINE TASKS
@@ -57,6 +81,19 @@ gulp.task( 'scripts', function() {
 	gulp.src( PATHS.scriptsSrc )
 		.pipe( browserify() )
 		.pipe( gulp.dest( PATHS.scriptsDest ) );
+} );
+
+gulp.task( 'images', [ 'images:migrate', 'images:resize' ] );
+
+gulp.task( 'images:migrate', function() {
+	gulp.src( PATHS.imagesSrc )
+		.pipe( gulp.dest( PATHS.imagesDest ) );
+} );
+
+gulp.task( 'images:resize', function() {
+	IMAGE_SIZES.forEach( function( size ) {
+		processImages( PATHS.imagesSrc, PATHS.imagesDest, { width: size } );
+	} );
 } );
 
 gulp.task( 'watch', function() {
