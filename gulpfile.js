@@ -62,4 +62,5 @@ gulp.task( 'scripts', function() {
 gulp.task( 'watch', function() {
 	gulp.watch( '_sass/**/*.scss', [ 'sass' ] );
 	gulp.watch( '_js/**/*.js', [ 'scripts' ] );
+	gulp.watch( 'css/styles.css', [ 'css:minify' ] );
 } );
