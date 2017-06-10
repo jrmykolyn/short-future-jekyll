@@ -7,18 +7,17 @@ var stringScrambler = require( 'sfco-string-scrambler' );
 // INIT
 // --------------------------------------------------
 ( function() {
-	var titleShort = document.querySelector( '.page-title--short' );
-	var titleFuture = document.querySelector( '.page-title--future' );
-	var counter = 0;
-	var intervalDur = 30000; // 30s
+	var titleElem = document.getElementById( 'title' );
+	var charElems = titleElem.querySelectorAll( 'span' );
+	var timeoutRef = null;
+	var timeoutDur = 10000 // 10s
+	var intervalRef = null;
+	var intervalDur = 2000; // 2s
 
-	var interval = setInterval( function() {
-		if ( counter % 2 === 0 ) {
-			titleShort.innerHTML = stringScrambler( titleShort.innerHTML, { useChars: 'short'.split( '' ) } );
-		} else {
-			titleFuture.innerHTML = stringScrambler( titleFuture.innerHTML, { useChars: 'future'.split( '' ) } );
-		}
-
-		counter++;
-	}, intervalDur );
+	timeoutRef = setTimeout( function() {
+		intervalRef = setInterval( function() {
+			var el = Array.prototype.slice.call( charElems, 0 )[ Math.floor( Math.random() * charElems.length ) ];
+			el.innerHTML = stringScrambler( el.innerHTML );
+		}, intervalDur );
+	}, timeoutDur );
 } )();
