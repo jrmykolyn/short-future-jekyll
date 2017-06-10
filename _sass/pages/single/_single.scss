@@ -18,9 +18,13 @@ $project-info: '.project-info';
 	@include span( 12 of 12 );
 	@include clearfix;
 
-	&--content {
+	&--content,
+	&--images,
+	&--footer {
 		@extend #{$project-section};
+	}
 
+	&--content {
 		border-top: $border-width--thick solid getColor( rich-black );
 		padding: 3rem 0;
 
@@ -36,8 +40,6 @@ $project-info: '.project-info';
 	}
 
 	&--images {
-		@extend #{$project-section};
-
 		img {
 			width: 100%;
 			display: block;
@@ -45,6 +47,15 @@ $project-info: '.project-info';
 			&:not( :last-child ) {
 				margin-bottom: 2rem;
 			}
+		}
+	}
+
+	&--footer {
+		text-align: center;
+
+		// Media queries
+		@media ( min-width: 600px ) {
+			text-align: left;
 		}
 	}
 }

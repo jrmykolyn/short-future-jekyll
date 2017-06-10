@@ -1,0 +1,41 @@
+// --------------------------------------------------
+// VARIABLES
+// --------------------------------------------------
+// Add any SASS variables that are specific to this file here.
+
+
+// --------------------------------------------------
+// PLACEHOLDERS
+// --------------------------------------------------
+// Write shared styles in placeholder rules here, then extend them from specific selectors below.
+
+
+// --------------------------------------------------
+// SELECTORS
+// --------------------------------------------------
+.cta {
+	@include dims( auto );
+	@include min-size( 18rem initial );
+	@include clearfix;
+
+	display: inline-block;
+	background-color: transparent;
+	border: 0.2rem solid getColor( rich-black );
+	padding: 0 2rem;
+	margin: 3rem auto;
+
+	font-family: 'Work Sans';
+	font-size: 1.6rem;
+	font-weight: 600;
+	text-align: center;
+	text-transform: uppercase;
+	letter-spacing: 0.1rem;
+	line-height: 6rem;
+	transition: all 0.25s;
+
+	@include on( hover focus ) {
+		color: getColor( white );
+		background-color: getColor( rich-black );
+		opacity: 1;
+	}
+}
