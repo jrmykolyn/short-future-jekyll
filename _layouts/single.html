@@ -42,8 +42,8 @@
 		</section>
 		{% if page.images %}
 		<section class="project-section--images">
-			{% for image in page.images %}
-			<img src="{{ image }}" alt="#">
+			{% for image in page.images.files %}
+			<img src="{{ image }}.{{ page.images.extension }}" alt="#" srcset="{% for size in page.images.sizes %}{{ image }}x{{ size }}.{{ page.images.extension }} {{ size }}w,{% endfor %}" sizes="100vw" />
 			{% endfor %}
 		</section>
 		{% endif %}

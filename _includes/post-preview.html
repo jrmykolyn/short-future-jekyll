@@ -1,7 +1,9 @@
 <article class="post-preview">
 	<div class="post-preview__header">
 		<a href="{{ include.post.url }}">
-			<img src="{{ include.post.featured_image }}" alt="#">
+			{% for image in include.post.featured_image.files %}
+			<img src="{{ image }}.{{ include.post.featured_image.extension }}" alt="#" srcset="{% for size in include.post.featured_image.sizes %}{{ image }}x{{ size }}.{{ include.post.featured_image.extension }} {{ size }}w,{% endfor %}" sizes="66vw" />
+			{% endfor %}
 		</a>
 	</div>
 	<div class="post-preview__body">
